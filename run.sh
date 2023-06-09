@@ -1,0 +1,1 @@
+UID_GID="$(id -u):$(id -g)" docker run -it docker_doc-document

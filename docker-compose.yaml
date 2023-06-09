@@ -1,0 +1,12 @@
+version: '3'
+services:
+  document:
+    container_name: container
+    build: .
+    tty: true
+    user: "${UID_GID}"
+    ports:
+      - 3000:3000
+    working_dir: /usr/src/app/
+    volumes:
+      - ./:/usr/src/app
